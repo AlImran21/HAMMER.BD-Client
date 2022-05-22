@@ -1,0 +1,56 @@
+[
+    {
+        "id": "1",
+        "name": "Tinners Hammer",
+        "img": "https://www.buckaroos.com/wp-content/uploads/T-30J_Klenk-20-oz-Square-Head-Tinners-Hammer.jpg",
+        "price": 250,
+        "minimumQuantity": "300",
+        "availableQuantity": 800,
+        "description": "Estwing's Tinner's Hammers have a bonded and molded Shock Reduction Grip®. The head and handles are forged in one piece and fully polished. These tools have unsurpassed balance and temper. Made in the U.S.A."
+    },
+    {
+        "id": "2",
+        "name": "Electrician Hammer",
+        "img": "https://www.electriciantalk.com/attachments/14ozhammer-jpg.84066/",
+        "price": 400,
+        "minimumQuantity": "200",
+        "availableQuantity": 600,
+        "description": "The hammer is light (four ounces - 113 grams) but it is made of a steel forging for strength and rigidity. It has a highly attractive chromium plated finish. Both flat and ball peen heads are hardened and are offset for use in corners or close to obstructions. The lens is mounted in rubber for shock resistance."
+    },
+    {
+        "id": "3",
+        "name": "Dead Blow Hammer",
+        "img": "https://www.harborfreight.com/media/catalog/product/cache/9fc4a8332f9638515cd199dd0f9238da/6/9/69004_W3.jpg",
+        "price": 900,
+        "minimumQuantity": "100",
+        "availableQuantity": 400,
+        "description": "A dead blow hammer is a mallet-like tool used to absorb tremors that occur when the hammer strikes. It's a useful tool in that it prevents damage to soft surfaces, while reducing the amount of rebound and improving the striking force of the hammer."
+    },
+    {
+        "id": "4",
+        "name": "Drywall Hammer",
+        "img": "https://images.thdstatic.com/productImages/53a585fd-d865-4b50-9e9d-877eff9c2ad6/svn/wal-board-tools-ball-peen-hammers-02-001-64_600.jpg",
+        "price": 600,
+        "minimumQuantity": "150",
+        "availableQuantity": 500,
+        "description": "A drywall hammer is a specialty tool that resembles a traditional hammer, except for its milled face that's used to grip nails and its hatchet-like end that's used to trim drywall. The tool is mostly used for installing and modifying drywall, which is the material used to construct walls throughout your home."
+    },
+    {
+        "id": "5",
+        "name": "Welders Hammer",
+        "img": "https://5.imimg.com/data5/RE/PY/OE/SELLER-80962986/pipe-wrench-500x500.jpg",
+        "price": 2000,
+        "minimumQuantity": "130",
+        "availableQuantity": 300,
+        "description": "A steam hammer, also called a drop hammer, is an industrial power hammer driven by steam that is used for tasks such as shaping forgings and driving piles."
+    },
+    {
+        "id": "6",
+        "name": "Jack Hammer",
+        "img": "https://image.made-in-china.com/44f3j00sQCEWPTKOuib/Coofix-High-Quality-Electric-Jack-Hammer-Demolition-Demolition-Hammer-Drill-China.jpg",
+        "price": 1500,
+        "minimumQuantity": "300",
+        "availableQuantity": 700,
+        "description": "A jackhammer operates by driving an internal hammer up and down. The hammer is first driven down to strike the chisel and then back up to return the hammer to the original position to repeat the cycle."
+    }
+]

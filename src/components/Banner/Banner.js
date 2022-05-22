@@ -3,7 +3,7 @@ import banner1 from '../../assets/images/banner1.avif';
 
 const Banner = () => {
     return (
-        <div className="hero min-h-screen bg-base-200">
+        <div className="hero min-h-screen bg-base-100">
             <div className="hero-content flex-col lg:flex-row-reverse gap-x-64">
                 <img src={banner1} className="max-w-sm rounded-lg shadow-2xl" alt='' />
                 <div>

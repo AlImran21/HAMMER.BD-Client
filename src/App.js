@@ -5,6 +5,7 @@ import Blogs from './components/Blogs/Blogs';
 import Login from './components/Authentication/Login';
 import Register from './components/Authentication/Register';
 import NotFound from "./components/NotFound/NotFound";
+import Footer from "./components/Footer/Footer";
 
 
 
@@ -20,6 +21,7 @@ function App() {
 
        <Route path="*" element={<NotFound />}></Route>
      </Routes>
+     <Footer />
     </>
   );
 }

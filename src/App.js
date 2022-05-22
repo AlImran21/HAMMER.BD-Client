@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Blogs from './components/Blogs/Blogs';
 import Login from './components/Authentication/Login';
 import Register from './components/Authentication/Register';
+import NotFound from "./components/NotFound/NotFound";
 
 
 
@@ -16,6 +17,8 @@ function App() {
        <Route path="blogs" element={<Blogs />}></Route>
        <Route path="login" element={<Login />}></Route>
        <Route path="register" element={<Register />}></Route>
+
+       <Route path="*" element={<NotFound />}></Route>
      </Routes>
     </>
   );

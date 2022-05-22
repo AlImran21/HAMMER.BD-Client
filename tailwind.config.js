@@ -8,7 +8,7 @@ module.exports = {
       {
         hammertheme: {
 
-          "primary": "#FF00F2",
+          "primary": "#333",
 
           "secondary": "#FF7300",
 

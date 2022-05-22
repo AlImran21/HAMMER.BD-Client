@@ -1,7 +1,13 @@
 import React from 'react';
 
+
+
 const HomeProductDetails = ({ displayProduct }) => {
-    const { name, img, description, price, minimumQuantity, availableQuantity } = displayProduct;
+    const { _id, name, img, description, price, minimumQuantity, availableQuantity } = displayProduct;
+
+    const handlePurchaseButton = (id) => {
+
+    }
 
     return (
         <div class="card w-80 bg-white shadow-xl">
@@ -18,7 +24,7 @@ const HomeProductDetails = ({ displayProduct }) => {
                 <h2 class="text-sm font-bold">Minimum Quantity: {minimumQuantity}</h2>
                 <h2 class="text-sm font-bold">Available Quantity: {availableQuantity}</h2>
                 <h2 class="text-sm font-bold">Price: {price}</h2>
-                <button className="btn border-0 text-white bg-gradient-to-tr from-blue to-green">Purchase</button>
+                <button onClick={() => handlePurchaseButton(_id)} className="btn border-0 text-white bg-gradient-to-tr from-blue to-green">Purchase</button>
             </div>
         </div>
     );

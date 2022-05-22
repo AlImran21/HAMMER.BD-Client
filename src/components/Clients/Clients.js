@@ -9,7 +9,7 @@ import logo5 from '../../assets/icons/logo5.png';
 const Clients = () => {
     return (
         <div className='mb-36'>
-            <h1 className='text-4xl font-semibold text-slate-900 font-serif text-center mb-16'>Some Of Our Best Clients</h1>
+            <h1 className='text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#00A36C] to-neutral font-serif text-center mb-16'>Some Of Our Best Clients</h1>
             <div className='grid lg:grid-cols-3 md:grid-cols2 sm:grid-cols-1 gap-8 px-24'>
                 <img src={logo1} alt="" />
                 <img src={logo2} alt="" />

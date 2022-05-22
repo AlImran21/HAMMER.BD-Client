@@ -9,7 +9,7 @@ const HomeProduct = () => {
 
     return (
         <div className='bg-base-100'>
-            <h2 className='text-4xl text-center mb-20 font-bold text-primary'>Our Products</h2>
+            <h2 className='text-4xl text-center mb-20 font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#00A36C] to-primary font-serif'>Our Products</h2>
             <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 px-24 mb-36'>
                 {
                     displayProducts.map(displayProduct => <HomeProductDetails

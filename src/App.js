@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { ToastContainer} from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
@@ -10,6 +10,7 @@ import NotFound from "./components/NotFound/NotFound";
 import Footer from "./components/Footer/Footer";
 import MyPortfolio from "./components/MyPortfolio/MyPortfolio";
 import Purchase from "./components/Purchase/Purchase";
+import RequireAuth from "./components/Authentication/RequireAuth";
 
 
 
@@ -20,7 +21,13 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/purchase/:productId" element={<Purchase />}></Route>
+
+        <Route path="/purchase/:productId" element={
+          <RequireAuth>
+            <Purchase />
+          </RequireAuth>
+        }></Route>
+
         <Route path="blogs" element={<Blogs />}></Route>
         <Route path="myPortfolio" element={<MyPortfolio />}></Route>
         <Route path="login" element={<Login />}></Route>

@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 const MyPortfolio = () => {
     return (
-        <div class="card w-96 bg-base-100 shadow-2xl mx-auto mt-20 mb-20">
-            <div class="card-body">
-                <h2 class="card-title">Name: Al-Imran</h2>
+        <div className="card w-96 bg-base-100 shadow-2xl mx-auto mt-20 mb-20">
+            <div className="card-body">
+                <h2 className="card-title">Name: Al-Imran</h2>
                 <p><span className='font-semibold'>Email:</span> alimran21feb@gmail.com</p>
                 <p><span className='font-semibold'>Educational Background:</span> I am a second year student of Psychology Department of Chittagong City College.</p>
                 <p><span className='font-semibold'>All the technology I know:</span></p>

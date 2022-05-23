@@ -1,12 +1,15 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+
 
 
 
 const HomeProductDetails = ({ displayProduct }) => {
     const { _id, name, img, description, price, minimumQuantity, availableQuantity } = displayProduct;
+    const navigate = useNavigate();
 
     const handlePurchaseButton = (id) => {
-
+        navigate(`/purchase/${id}`);
     }
 
     return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, NavLink, Outlet } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 
 const Dashboard = () => {
     return (
@@ -7,7 +7,7 @@ const Dashboard = () => {
             <input id="dashboard-sidebar" type="checkbox" class="drawer-toggle" />
             <div class="drawer-content mt-8">
                 {/* <!-- Page content here --> */}
-                <h1 className='text-5xl text-primary'>Dashboard</h1>
+                <h1 className='text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-500'>Dashboard</h1>
                 <Outlet />
             </div>
             <div class="drawer-side">

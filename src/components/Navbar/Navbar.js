@@ -14,11 +14,11 @@ const Navbar = () => {
 
     const menuItems = <>
         <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to='/blogs'>Blogs</NavLink></li>
-        <li><NavLink to='/myPortfolio'>My Portfolio</NavLink></li>
         {
             user && <li><NavLink to='/dashboard'>Dashboard</NavLink></li>
         }
+        <li><NavLink to='/blogs'>Blogs</NavLink></li>
+        <li><NavLink to='/myPortfolio'>My Portfolio</NavLink></li>
         <li>{user ? <button onClick={logout} className="btn btn-ghost capitalize text-[17px] font-normal">Sign Out</button> : <Link to='/login'>Login</Link>}</li>
     </>
 

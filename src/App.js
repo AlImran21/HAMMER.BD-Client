@@ -15,6 +15,7 @@ import Dashboard from "./components/Dashboard/Dashboard/Dashboard";
 import MyProfile from "./components/Dashboard/MyProfile";
 import AddReview from "./components/Dashboard/Dashboard/AddReview";
 import MyOrder from "./components/Dashboard/Dashboard/MyOrder";
+import Users from "./components/Dashboard/Dashboard/Users";
 
 
 
@@ -40,6 +41,7 @@ function App() {
           <Route index element={<MyProfile />}></Route>
           <Route path="addReview" element={<AddReview />}></Route>
           <Route path="myOrders" element={<MyOrder />}></Route>
+          <Route path="users" element={<Users />}></Route>
         </Route>
 
 

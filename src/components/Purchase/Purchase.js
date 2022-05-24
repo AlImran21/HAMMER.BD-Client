@@ -1,13 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import auth from '../../firebase.init';
+import BookingModal from './BookingModal';
+import PurchaseBanner from './PurchaseBanner';
 
 
 const Purchase = () => {
     const [user] = useAuthState(auth);
     const { productId } = useParams();
     const [products, setProducts] = useState({});
+
+    const [purchaseProduct, setPurchaseProduct] = useState(null);
 
     useEffect(() => {
         fetch(`http://localhost:5000/product/${productId}`)
@@ -16,8 +20,10 @@ const Purchase = () => {
     }, []);
 
 
+
     return (
         <div>
+            <PurchaseBanner />
             <div className="card w-80 bg-white shadow-xl mx-auto my-10">
                 <figure>
                     <img style={{ width: '100%', height: '200px' }} src={products?.img} alt="" />
@@ -32,9 +38,14 @@ const Purchase = () => {
                     <h2 className="text-sm font-bold">Minimum Quantity: {products?.minimumQuantity}</h2>
                     <h2 className="text-sm font-bold">Available Quantity: {products?.availableQuantity}</h2>
                     <h2 className="text-sm font-bold">Price: {products?.price}</h2>
-                    <button className="btn border-0 text-white bg-gradient-to-tr from-blue to-green">Purchase</button>
+                    <label
+                        onClick={() => setPurchaseProduct(products)}
+                        for="booking-modal"
+                        class="btn border-0 text-white bg-gradient-to-tr from-blue to-green"
+                    >
+                        Purchase
+                    </label>
                 </div>
-
             </div>
             <div className='text-center'>
                 <input type="number" placeholder="Write Your Quantity" className="input input-bordered input-success input-md w-full max-w-xs my-10" />

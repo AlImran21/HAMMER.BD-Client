@@ -13,7 +13,7 @@ const MyOrder = () => {
     useEffect(() => {
 
         if (user) {
-            fetch(`http://localhost:5000/booking?visitor=${user?.email}`, {
+            fetch(`https://hidden-crag-33232.herokuapp.com/booking?visitor=${user?.email}`, {
                 method: 'GET',
                 headers: {
                     'authorization': `Bearer ${localStorage.getItem('accessToken')}`

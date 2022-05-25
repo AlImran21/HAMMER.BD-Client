@@ -26,17 +26,17 @@ const Dashboard = () => {
 
                     {
                         admin ?
-                            <div>
+                            <>
                                 <li><Link to='/dashboard/users' className='text-slate-700 font-medium'>All Users</Link></li>
                                 <li><Link to='/dashboard/allOrders' className='text-slate-700 font-medium'>Manage All Orders</Link></li>
                                 <li><Link to='/dashboard/addProduct' className='text-slate-700 font-medium'>Add A Product</Link></li>
                                 <li><Link to='/dashboard/manageProduct' className='text-slate-700 font-medium'>Manage Products</Link></li>
-                            </div>
+                            </>
                             :
-                            <div>
+                            <>
                                 <li><Link to='/dashboard/myOrders' className='text-slate-700 font-medium'>My Orders</Link></li>
                                 <li><Link to='/dashboard/addReview' className='text-slate-700 font-medium'>Add A Review</Link></li>
-                            </div>
+                            </>
                     }
                 </ul>
 

@@ -14,7 +14,7 @@ const Purchase = () => {
     const [purchaseProduct, setPurchaseProduct] = useState(null);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/product/${productId}`)
+        fetch(`https://hidden-crag-33232.herokuapp.com/product/${productId}`)
             .then(res => res.json())
             .then(data => setProducts(data))
     }, []);

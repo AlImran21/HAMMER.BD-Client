@@ -12,7 +12,7 @@ const BookingModal = ({ date }) => {
     const { _id, name, price } = products;
 
     useEffect(() => {
-        fetch(`http://localhost:5000/product/${productId}`)
+        fetch(`https://hidden-crag-33232.herokuapp.com/product/${productId}`)
             .then(res => res.json())
             .then(data => setProducts(data))
     }, []);
@@ -39,7 +39,7 @@ const BookingModal = ({ date }) => {
 
         }
 
-        fetch('http://localhost:5000/booking', {
+        fetch('https://hidden-crag-33232.herokuapp.com/booking', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

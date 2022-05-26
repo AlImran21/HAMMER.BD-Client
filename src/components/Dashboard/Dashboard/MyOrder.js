@@ -1,7 +1,7 @@
 import { signOut } from 'firebase/auth';
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 
 const MyOrder = () => {
@@ -51,17 +51,41 @@ const MyOrder = () => {
                         <th>Email</th>
                         <th>Product Name</th>
                         <th>Price</th>
+                        <th>Payment</th>
                     </tr>
                 </thead>
                 <tbody>
                     {
-                        orders.map((order, index) => <tr>
+                        orders.map((order, index) => <tr key={order?._id}>
                             <th>{index + 1}</th>
                             <td>{order?.date}</td>
                             <td>{order?.visitorName}</td>
                             <td>{order?.visitor}</td>
                             <td>{order?.product}</td>
                             <td>{order?.price}</td>
+                            <td>
+                                {
+                                    (order?.price && !order?.paid)
+                                    &&
+                                    <Link to={`/dashboard/payment/${order?._id}`}>
+                                        <button className='px-3 rounded-full bg-green-500 text-white'
+                                        >
+                                            Pay
+                                        </button>
+                                    </Link>
+                                }
+                                {
+                                    (order?.price && order?.paid)
+                                    &&
+                                    <div>
+                                        <p className=' text-green-500 font-semibold'
+                                        >
+                                            Paid
+                                        </p>
+                                        <span className='text-info font-bold'>Transaction Id: {order?.transactionId}</span>
+                                    </div>
+                                }
+                            </td>
                         </tr>)
                     }
                 </tbody>

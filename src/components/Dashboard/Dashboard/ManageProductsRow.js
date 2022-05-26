@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { toast } from 'react-toastify';
 import DeleteConfirmModal from './DeleteConfirmModal';
 
-const ManageProductsRow = ({ addProduct, refetch, setDeletingProduct }) => {
+const ManageProductsRow = ({ addProduct,  setDeletingProduct }) => {
 
     const { email, name, img, description, price, minimumQuantity, availableQuantity } = addProduct;
 

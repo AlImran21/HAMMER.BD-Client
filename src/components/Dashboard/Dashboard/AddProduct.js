@@ -29,7 +29,7 @@ const AddProduct = () => {
                     reset();
                 }
                 else {
-                    toast.error('Failed to add product');;
+                    toast.error('Failed to add product');
                 }
 
             });

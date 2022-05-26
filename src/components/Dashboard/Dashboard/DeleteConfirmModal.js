@@ -6,7 +6,7 @@ const DeleteConfirmModal = ({ deletingProduct, refetch, setDeletingProduct }) =>
     const { name, email } = deletingProduct;
 
     const handleDelete = () => {
-        fetch(`http://localhost:5000/addProduct/${email}`, {
+        fetch(`https://hidden-crag-33232.herokuapp.com/addProduct/${email}`, {
             method: 'DELETE',
             headers: {
                 'content-type': 'application/json',

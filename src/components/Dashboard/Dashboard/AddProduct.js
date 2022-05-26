@@ -11,7 +11,7 @@ const AddProduct = () => {
     const { register, handleSubmit, reset } = useForm();
 
     const onSubmit = (data) => {
-        const url = `http://localhost:5000/addProduct`;
+        const url = `https://hidden-crag-33232.herokuapp.com/addProduct`;
         fetch(url, {
             method: 'POST',
             headers: {

@@ -11,7 +11,7 @@ const AddReview = () => {
 
     const onSubmit = (data) => {
         console.log(data);
-        const url = `http://localhost:5000/addReview`;
+        const url = `https://hidden-crag-33232.herokuapp.com/addReview`;
         fetch(url, {
             method: 'POST',
             headers: {

@@ -7,7 +7,7 @@ import ManageProductsRow from './ManageProductsRow';
 const ManageProducts = () => {
     const [deletingProduct, setDeletingProduct] = useState(null);
 
-    const { data: addProducts, isLoading, refetch } = useQuery('addProducts', () => fetch('http://localhost:5000/addProduct', {
+    const { data: addProducts, isLoading, refetch } = useQuery('addProducts', () => fetch('https://hidden-crag-33232.herokuapp.com/addProduct', {
         method: 'GET',
         headers: {
             'content-type': 'application/json',

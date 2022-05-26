@@ -5,7 +5,7 @@ import ReviewsRow from './ReviewsRow';
 
 const Reviews = () => {
 
-    const { data: addReviews, isLoading, refetch } = useQuery('addReviews', () => fetch('http://localhost:5000/addReview', {
+    const { data: addReviews, isLoading, refetch } = useQuery('addReviews', () => fetch('https://hidden-crag-33232.herokuapp.com/addReview', {
         method: 'GET',
         headers: {
             'content-type': 'application/json',

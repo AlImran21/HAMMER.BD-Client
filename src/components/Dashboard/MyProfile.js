@@ -11,7 +11,7 @@ const MyProfile = () => {
 
     const onSubmit = (data) => {
         console.log(data);
-        const url = `http://localhost:5000/updateProfile`;
+        const url = `https://hidden-crag-33232.herokuapp.com/updateProfile`;
         fetch(url, {
             method: 'POST',
             headers: {
